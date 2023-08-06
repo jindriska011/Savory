@@ -1,0 +1,54 @@
+
+
+<section class="px-4 pb-5 my-5 ">
+  <p class="display-3 text-center">Submit Your Recipe</p>
+  <div class="container-sm">
+    <form class="" name="recipeSubmission">
+      <div class="my-3">
+        <label for="name" class="form-label ms-1">Name</label>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Recipe name">
+      </div>
+
+      <select class="form-select" name="Category" id="category" aria-label="Default select example">
+        <option selected>Category</option>
+        <option value="Thai">Thai</option>
+        <option value="American">American</option>
+        <option value="Egyptian">Egyptian</option>
+        <option value="Mexican">Mexican</option>
+        <option value="French">French</option>
+        <option value="Moroccan">Moroccan</option>
+        <option value="Spanish">Spanish</option>
+        <option value="Italian">Italian</option>
+        <option value="Chinese">Chinese</option>
+        <option value="Portuguese">Portuguese</option>
+        <option value="Turkish">Turkish</option>
+        <option value="German">German</option>
+      </select>
+
+      <div class="my-3" name="ingredients">
+        <label for="ingredient" class="form-label ms-1">Ingredients</label>
+        <input type="text" class="form-control" name="ingredient" id="recipeIngredient" placeholder="Ingredient 1">
+        <button class="btn btn-outline-warning my-2" id="addIngredient"> + Add more ingredients </button>
+      </div>
+
+      <div class="my-3">
+        <label for="description" class="form-label ms-1">Preparation:</label>
+        <textarea class="form-control" name="description" id="description" rows="5" placeholder="Recipe instructions"></textarea>
+      </div>
+
+      <div class="my-3">
+        <label for="photoUrl" class="form-label ms-1">Photo upload</label>
+        <input type="text" class="form-control" name="photoupload" id="photoupload" placeholder="Photo URL">
+      </div>
+
+      <div class="my-3">
+        <label for="email" class="form-label ms-1">Email address</label>
+        <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Your email">
+      </div>
+        
+      <button type="submit" class="btn btn-warning btn-lg my-3" id="submitRecipe">Submit</button>
+    </form>
+  </div>
+  
+</section>
+

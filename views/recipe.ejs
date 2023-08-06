@@ -1,0 +1,26 @@
+<% if(selected != '' ){ %>
+
+    <div class="container container-md">
+        <div class="row mb-5">
+            <span class="display-3 text-center"><%- selected.name%></span>
+        </div>
+        <div class="row my-3">
+            <div class="col-md-5 col-12">
+                <img class="img img-fluid rounded-5" src='../img/<%-selected.image%>'></img>
+            </div>
+            <div class="col-md-7 col-12">
+                <p class="display-6">Ingredients:</p>
+                <ul>
+                    <% selected.ingredients.forEach(ingredient => { %>
+                        <li><%- ingredient %></li>
+                    <% }) %>
+                </ul>
+            </div>
+        </div>
+        <div class="row my-3">
+            <p class="display-6">Preparation:</p>
+            <p><%-selected.description%></p>        
+        </div>
+    </div>
+        
+<% } %>

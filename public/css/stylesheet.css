@@ -1,0 +1,42 @@
+:root{
+    --bs-font-sans-serif: 'Rubik', sans-serif;
+}
+
+a{
+    color: var(--bs-dark);
+}
+
+body{
+    background: url(../img/bg2.png) no-repeat fixed center;
+    background-size: cover;
+
+}
+
+.category-link{
+    transition: 250ms all;
+}
+
+.category-link:hover{
+    transform: scale(1.1);
+}
+
+.category-img{
+    height: 100px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.category-img-lg{
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.category-img img, .category-img-lg img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.container-xxl{
+    max-width: 1530px;
+}
